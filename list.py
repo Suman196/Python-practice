@@ -37,7 +37,7 @@ else:
     print("not present")
 
 
-
+# Insertion
 
 a = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
 a[1]="Lebu"
@@ -57,3 +57,37 @@ print(len(a))
 a.insert(1,"Cherry")# insert(index, value)
 print(a)
 print(len(a))
+
+
+a = ["apple", "banana", "cherry"]
+a.append("Orange")# insert from end
+print(a)
+print(len(a))
+a.insert(1,"blackberry")#insert at a position and other elements shifted accordingly
+print(a)
+print(len(a))
+b =["mango", "pineapple", "papaya"]
+a.extend(b)# concatenate or append the whole list b with/to a
+print(a)
+print(len(a))
+c = ("kiwi", "orange")
+a.extend(a)
+print(a)
+a.extend(c)#we can extend list with tuple
+print(a)
+
+# Deletion
+a = ["apple", "banana", "cherry","kiwi", "orange"]
+a.remove("banana")
+print(a)
+a.pop(0) # pop/remove the indexed element from the list
+print(a)
+a.pop()# remove the last element
+print(a)
+a.clear() #The clear() method empties the list. The list still remains, but it has no content.
+print(a)
+b = ["apple", "banana", "cherry","kiwi", "orange"]
+del b[0] # del keyword to remove element from list
+print(b)
+del b
+print(b) #this will cause an error because you have succsesfully deleted "b".
